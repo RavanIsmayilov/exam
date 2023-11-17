@@ -1,0 +1,304 @@
+@import "./_mixins";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}  
+
+body{
+    margin: 0px;
+}
+
+#top{
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include mobile{
+            display: flex;
+            justify-content: space-between;
+        }
+    
+
+        &__burger{
+            display:none;
+
+           @include tablet{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           }
+
+           @include mobile{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           }
+        }
+      
+
+        &__title{
+
+            &-text{
+
+
+            }
+        }
+
+        &__link{
+
+            @include tablet{
+             display: none;
+            }
+
+        }
+
+        &__list{
+            display: flex;
+            list-style-type: none;
+
+
+            &-item{
+                margin: 0px 30px;
+                cursor: pointer;
+
+                &-link{
+                    text-decoration: none;
+                    color: black;
+
+
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+#shop__section{
+
+    .section{
+
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            color: white;
+        
+
+            &-link{
+                color: white;
+                font-weight: 700;
+
+              
+            }
+
+        }
+
+        &__main{
+            background-color: rgb(69, 19, 20);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include tablet{
+                height: 100vh;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+
+            }
+
+            &-image{
+                width: 600px;
+                height: 700px;
+                margin-right: 50px;
+
+                @include tablet{
+                    width: 400px;
+                    height: 450px;
+                    margin-top: 20px;
+                }
+
+            }
+
+            &-button{
+                width: 140px;
+                height: 50px;
+            }
+              
+        
+
+            &-text{
+                color: white;
+                margin-left: 70px;
+
+                @include tablet{
+                    margin-left: 28px;
+                }
+
+                &-title{
+                    font-size: 48px;
+                    
+                }
+
+
+            }
+
+        }
+    }
+}
+
+
+#fall__section{
+
+    .section{
+        display: flex;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text{
+            margin-right: 30px;
+
+            @include tablet{
+                padding-left: 87px;
+            }
+
+            &-title{
+                font-size: 40px;
+
+            }
+        }
+
+        &__button{
+            width: 140px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+            cursor: pointer;
+
+        }
+
+        &__image{
+            display: flex;
+
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-item{
+                width: 300px;
+                height: 500px;
+                margin: 0px 5px;
+
+                @include tablet{
+                    margin: 8px 50px 8px 5px;
+                }
+            }
+        }
+    }
+}
+
+#life__section{
+    background-image: url(../assets/images/life__section-image.webp);
+    background-repeat: no-repeat;
+    height: 500px;
+   
+
+    .section__text{
+      
+        &-title{
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+    }
+}
+
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__link{
+
+        &-list{
+            list-style-type: none;
+            margin: 30px 0px;
+
+            &-item{
+                color: black;
+
+
+            }
+        }
+    }
+
+    .footer__redirects{
+
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            color: black;
+            font-size: 28px;
+            margin-top: 20px;
+
+            &-link{
+                color: black;
+                margin: 20px 0px;
+                @include tablet{
+                    margin-right: 39px;
+                }
+            }
+        }
+
+        &-icon{
+
+            margin-top: 50px;
+
+            &-image{
+                margin: 0px 10px;
+            }
+
+        }
+
+
+    }
+}
+
+#join__section{
+background-image: url(../assets/images/join__section.webp);
+background-repeat: no-repeat;
+height: 700px;
+
+}
